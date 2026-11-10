@@ -1,0 +1,6 @@
+{
+  "name": "MindPulse - Mental Wellness Screening & Assessment",
+  "description": "Clinically informed stress (PSS-10), anxiety (GAD-7), and depression (PHQ-9) screenings with personalized evidence-based recommendations, interactive self-care tools, and verified crisis support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

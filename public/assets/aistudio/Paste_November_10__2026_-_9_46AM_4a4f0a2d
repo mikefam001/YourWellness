@@ -1,0 +1,1220 @@
+# MASTER DEVELOPMENT PROMPT: COMPREHENSIVE STRESS, ANXIETY & DEPRESSION ASSESSMENT AND MENTAL WELLNESS WEB APPLICATION
+
+## 1. PROJECT OVERVIEW
+
+Act as a world-class multidisciplinary software development team comprising:
+
+- A Senior Product Manager.
+- A Senior UI/UX Designer.
+- A Clinical Psychologist.
+- A Consultant Psychiatrist.
+- A Medical Doctor.
+- A Mental Health Research Specialist.
+- A Senior Frontend Engineer.
+- A Senior Software Architect.
+- A Quality Assurance Engineer.
+- A Cybersecurity and Privacy Specialist.
+- An Accessibility Specialist.
+
+Your responsibility is to plan, architect, design, develop, test and deliver a production-quality, responsive, browser-based mental health screening and wellness application.
+
+The application will focus on three interconnected but distinct areas of mental health:
+
+1. Stress.
+2. Anxiety.
+3. Depression.
+
+The primary purpose is to enable individuals to complete structured mental health assessments using clinically informed questions, relevant personal and lifestyle information, and validated screening instruments where appropriate.
+
+Based on the information supplied by the user, the application should evaluate reported symptoms, estimate their severity, identify potential warning signs, explain the assessment results and provide personalized, evidence-informed recommendations.
+
+The application should also serve as a comprehensive mental wellness educational platform, providing reliable information, practical self-help resources, coping strategies, lifestyle recommendations and guidance on when to seek professional medical attention.
+
+**Product vision:** Build a reliable, intelligent, accessible and visually exceptional mental wellness platform that helps people understand their psychological well-being and make informed decisions about their mental health.
+
+This is a screening, educational and wellness-support application. It is NOT a diagnostic medical device and must never present its results as a confirmed medical diagnosis.
+
+## 2. PROJECT CONSTRAINTS AND TECHNICAL REQUIREMENTS
+
+The following requirements are mandatory:
+
+- Application type: Browser-based web application.
+- Authentication: None.
+- User registration: None.
+- Database: None.
+- Backend: Avoid requiring a backend for core functionality.
+- Data persistence: No remote storage of assessment answers or personal health information.
+- Architecture: Client-side application.
+- Responsive design: Fully responsive across desktop, laptop, tablet and mobile devices.
+- Navigation: Professional top navigation bar.
+- Footer: Comprehensive footer containing relevant navigation and informational links.
+- UI/UX: Premium, modern, clean, intuitive and professional.
+- Accessibility: Follow WCAG 2.2 AA principles.
+- Performance: Optimize loading speed, responsiveness and rendering.
+- Security: Apply secure frontend development practices.
+- Maintainability: Use modular, reusable and well-organized code.
+- Scalability: Structure the application so that future features can be added without rebuilding the entire application.
+- Testing: Include unit, integration, functional and end-to-end testing.
+- Browser compatibility: Support current versions of Chrome, Firefox, Safari and Edge.
+
+Do not introduce authentication, database integration, subscriptions, payment gateways or unnecessary backend infrastructure.
+
+The application must work independently in the browser.
+
+All assessment calculations should be performed locally using deterministic, transparent and testable logic.
+
+Do not send assessment answers to external AI services or third-party APIs.
+
+Where practical, assessment answers should remain in memory only and disappear when the session is closed or the user resets the assessment.
+
+## 3. TARGET AUDIENCE
+
+Design the application for:
+
+- Adults experiencing everyday stress.
+- Individuals experiencing persistent anxiety symptoms.
+- People who may be experiencing depressive symptoms.
+- Students and young professionals.
+- Working professionals and entrepreneurs.
+- Individuals experiencing emotional or psychological difficulties.
+- People interested in understanding and improving their mental wellness.
+- Individuals who want to conduct an initial self-assessment before consulting a healthcare professional.
+
+The initial screening experience should be designed for adults aged 18 and above.
+
+If minors access the application, clearly explain that the adult screening tools are not intended for them and direct them to appropriate support from a qualified healthcare professional or trusted adult.
+
+## 4. APPLICATION INFORMATION ARCHITECTURE
+
+Build the application around the following major sections.
+
+### A. Home / Landing Page
+
+Create an impressive homepage that immediately communicates the application's purpose.
+
+The homepage should include:
+
+**Hero section**
+- A compelling headline such as: "Understand Your Mind. Take Charge of Your Well-being."
+- A supporting description explaining the application's stress, anxiety and depression screening capabilities.
+- A prominent "Start Mental Health Assessment" CTA.
+- A secondary "Explore Mental Wellness" CTA.
+- A professional illustration or abstract mental wellness visual.
+
+**Quick assessment cards**
+
+Display three prominent cards:
+
+1. Stress Assessment.
+2. Anxiety Assessment.
+3. Depression Assessment.
+
+Each card should contain:
+- A short description.
+- What the assessment evaluates.
+- Estimated completion time.
+- A start assessment button.
+- An appropriate visual icon or illustration.
+
+**How it works**
+
+Present a simple four-step explanation:
+
+1. Answer carefully structured questions.
+2. Provide relevant lifestyle and well-being information.
+3. Receive your screening results.
+4. Explore personalized recommendations and next steps.
+
+**Why mental wellness matters**
+
+Explain the importance of understanding stress, anxiety and depression and seeking appropriate support.
+
+**Mental wellness resources**
+
+Feature selected articles, coping techniques and practical wellness guidance.
+
+**Important disclaimer**
+
+Clearly communicate that the platform provides screening information, not medical diagnosis or treatment.
+
+### B. Assessment Centre
+
+Create a dedicated assessment centre containing all three screening modules.
+
+Users must be able to:
+
+- Complete an individual assessment.
+- Complete a combined mental wellness assessment.
+- Understand what each assessment measures.
+- View estimated completion times.
+- Read assessment instructions before starting.
+- Navigate through questions.
+- Review and correct answers before submission.
+- Exit an assessment safely.
+- Restart an assessment.
+
+Each assessment should have its own clearly defined questions, scoring mechanism and result interpretation.
+
+Do not mix the three assessment scores into one arbitrary overall medical score.
+
+### C. Stress Assessment Module
+
+Develop a comprehensive stress screening experience.
+
+The assessment should investigate the user's psychological, emotional, behavioural and physical stress indicators.
+
+**Areas to evaluate:**
+
+1. Perceived stress levels.
+2. Work-related stress.
+3. Academic stress.
+4. Financial stress.
+5. Relationship and family stress.
+6. Environmental and social stress.
+7. Emotional exhaustion.
+8. Physical manifestations of stress.
+9. Sleep disturbances.
+10. Difficulty relaxing.
+11. Irritability and frustration.
+12. Concentration difficulties.
+13. Changes in appetite.
+14. Feelings of being overwhelmed.
+15. Ability to cope with daily responsibilities.
+
+**Sample assessment questions:**
+
+- How frequently have you felt overwhelmed by your responsibilities?
+- How often have you felt unable to control important things in your life?
+- Do you find it difficult to relax even when you have free time?
+- Have you experienced frequent headaches or unexplained body tension?
+- How frequently do you feel mentally exhausted?
+- Have you experienced difficulty sleeping because of worrying thoughts?
+- Do you feel that your responsibilities exceed your ability to manage them?
+- How frequently have you experienced irritability or frustration?
+- Have you noticed a decline in your productivity?
+- Do you feel emotionally drained after ordinary daily activities?
+
+Use suitable response scales, such as frequency-based Likert scales.
+
+**Important clinical implementation requirement:**
+
+Where a validated stress assessment instrument is used, implement its actual questions, response options, scoring rules and interpretation correctly.
+
+Consider the Perceived Stress Scale (PSS) where its licensing, permitted use and intended population have been verified.
+
+If a custom stress questionnaire is developed, explicitly label it as an application-specific wellness check-in rather than a clinically validated instrument. Do not invent clinical cut-off scores or claim that it diagnoses stress.
+
+**Additional stress-related parameters:**
+
+Collect relevant optional information, including:
+
+- Age range.
+- Occupation or current activity.
+- Average sleeping hours.
+- Sleep quality.
+- Physical activity frequency.
+- Perceived workload.
+- Major current stressors.
+- Duration of symptoms.
+- Impact on daily functioning.
+- Availability of social support.
+
+At the end, generate a structured stress screening report.
+
+### D. Anxiety Assessment Module
+
+Develop a comprehensive anxiety screening module.
+
+Evaluate the following areas:
+
+- Excessive worrying.
+- Persistent nervousness.
+- Difficulty controlling worry.
+- Restlessness.
+- Feeling on edge.
+- Irritability.
+- Muscle tension.
+- Sleep disturbances.
+- Difficulty concentrating.
+- Fear of negative outcomes.
+- Physical manifestations of anxiety.
+- Panic-like experiences.
+- Avoidance behaviours.
+- Interference with work, education and relationships.
+
+**Sample questions:**
+
+- Have you felt nervous, anxious or on edge?
+- Have you found it difficult to stop or control worrying?
+- Do you worry excessively about different aspects of your life?
+- Have you experienced difficulty relaxing?
+- Do you become easily irritated?
+- Do you feel afraid that something terrible might happen?
+- Have you experienced a racing heartbeat when feeling anxious?
+- Do your worries interfere with your everyday activities?
+
+**Validated assessment instrument:**
+
+Implement the Generalized Anxiety Disorder 7-item scale (GAD-7) as an optional standardized screening instrument.
+
+Requirements:
+- Use the established questionnaire.
+- Preserve the original response options.
+- Implement the correct scoring methodology.
+- Use established interpretation ranges.
+- Clearly explain the meaning and limitations of the result.
+- Do not modify the validated questions while still claiming to administer the standardized GAD-7.
+
+Add supplementary questions about duration, triggers, functional impairment and personal history without changing the standardized instrument's score.
+
+### E. Depression Assessment Module
+
+Develop a sensitive and comprehensive depression screening module.
+
+Evaluate:
+
+- Persistent sadness.
+- Loss of interest in previously enjoyable activities.
+- Feelings of hopelessness.
+- Reduced energy.
+- Fatigue.
+- Sleep disturbances.
+- Appetite changes.
+- Difficulty concentrating.
+- Feelings of worthlessness.
+- Excessive guilt.
+- Social withdrawal.
+- Reduced motivation.
+- Changes in daily functioning.
+- Thoughts of self-harm or suicide.
+
+**Sample questions:**
+
+- Have you experienced little interest or pleasure in doing things?
+- Have you been feeling down, depressed or hopeless?
+- Have you experienced difficulty falling asleep or sleeping excessively?
+- Have you frequently felt tired or experienced little energy?
+- Have you noticed changes in your appetite?
+- Have you felt bad about yourself?
+- Have you experienced difficulty concentrating?
+- Have you felt that life is no longer enjoyable?
+- Have you found it difficult to carry out your normal responsibilities?
+
+**Validated assessment instrument:**
+
+Implement the Patient Health Questionnaire-9 (PHQ-9), subject to verification of permitted use and appropriate clinical review.
+
+Requirements:
+- Use the established nine questions.
+- Preserve the original response choices.
+- Implement the official scoring methodology.
+- Apply established severity interpretation.
+- Handle the ninth question and any positive response through an appropriate safety pathway.
+- Clearly communicate that the result is a screening indication, not a diagnosis.
+
+The PHQ-9 score must never override a person's response to a direct safety question.
+
+### F. Combined Mental Wellness Assessment
+
+Provide an option for users to complete all three assessments in one guided experience.
+
+The combined assessment should:
+
+1. Collect basic demographic and lifestyle information.
+2. Conduct the stress screening.
+3. Conduct the anxiety screening.
+4. Conduct the depression screening.
+5. Collect additional contextual information.
+6. Conduct the necessary safety checks.
+7. Generate a consolidated mental wellness report.
+
+The report must show separate stress, anxiety and depression findings.
+
+Where results overlap, explain that the symptoms can coexist and that screening results alone cannot establish their underlying cause.
+
+Avoid presenting a single combined score as a medical diagnosis or scientifically established overall mental health index.
+
+## 5. GENERAL HEALTH AND LIFESTYLE INFORMATION
+
+Before or during the assessments, collect relevant contextual information.
+
+Organize these into simple, user-friendly sections.
+
+**Personal information**
+- Age range.
+- Gender, optional and preferably with a "prefer not to say" option.
+- Country of residence.
+- Employment or educational status.
+
+**Physical health information**
+- Existing physical health conditions, optional.
+- Current medications, optional.
+- Recent major illness, optional.
+- Recent changes in physical health.
+
+**Mental health history**
+- Previous experience with stress, anxiety or depression.
+- Previous professional mental health evaluation.
+- Previous counselling or therapy.
+- Family history of mental health conditions, optional.
+
+**Lifestyle information**
+- Average sleeping hours.
+- Sleep quality.
+- Physical activity.
+- Eating patterns.
+- Caffeine consumption.
+- Alcohol or substance use, optional.
+- Workload and daily responsibilities.
+- Social support.
+
+**Current experiences**
+- Duration of symptoms.
+- Significant recent life changes.
+- Current stressors.
+- Impact on relationships.
+- Impact on productivity.
+- Impact on daily functioning.
+
+Every question must have a clear purpose.
+
+Do not collect unnecessary sensitive information. Make optional questions genuinely optional.
+
+Do not infer a medical condition from an isolated lifestyle parameter.
+
+## 6. ASSESSMENT ENGINE AND SCORING LOGIC
+
+This is one of the most important components of the application.
+
+Build a reliable, modular assessment engine that processes responses using transparent, deterministic rules.
+
+Each assessment must have its own scoring engine.
+
+**For validated instruments:**
+
+- Follow their original scoring methodology.
+- Handle unanswered questions according to the instrument's official instructions.
+- Apply established severity categories accurately.
+- Do not invent thresholds.
+- Document the instrument version and source.
+- Validate the implementation with known test cases.
+
+**For application-specific assessments:**
+
+- Explain that scores represent indicative wellness findings.
+- Use clearly documented rules.
+- Do not present unvalidated thresholds as clinical standards.
+- Do not claim diagnostic accuracy or predictive capabilities that have not been established.
+
+**Assessment result dimensions:**
+
+Evaluate the following:
+
+- Reported symptom frequency.
+- Reported symptom severity.
+- Duration.
+- Impact on daily functioning.
+- Relevant lifestyle factors.
+- Relevant personal history.
+- Safety-related responses.
+
+The assessment engine should produce structured findings containing:
+
+- Assessment category.
+- Total score, where applicable.
+- Screening interpretation.
+- Symptom summary.
+- Relevant contributing factors.
+- Functional impact.
+- Potential warning signs.
+- Recommended next steps.
+
+All calculations must be performed in the browser.
+
+Do not use arbitrary AI-generated scores or allow a generative AI model to independently determine a user's mental health status.
+
+## 7. PERSONALIZED RESULTS AND REPORTING
+
+Create a highly polished results dashboard.
+
+This dashboard is the most important user-facing part of the application.
+
+It should provide meaningful insights rather than simply displaying a numerical score.
+
+**Results overview**
+
+Show separate cards for:
+
+- Stress findings.
+- Anxiety findings.
+- Depression findings.
+
+Each card should include:
+
+- Assessment name.
+- Score, where applicable.
+- Screening severity or interpretation.
+- Short explanation.
+- Relevant visual indicator.
+
+Use accessible colours and labels. Never communicate severity through colour alone.
+
+**Interpretation section**
+
+Explain in simple, empathetic language:
+
+- What the assessment measured.
+- What the user's responses suggest.
+- Which symptoms were most frequently reported.
+- How the reported symptoms may affect daily life.
+- What the result does and does not mean.
+
+**Personalized recommendations**
+
+Generate recommendations based on the actual assessment findings and contextual information.
+
+For example:
+
+For elevated stress indicators:
+- Establish a manageable daily routine.
+- Practise relaxation and grounding exercises.
+- Identify and address major stressors.
+- Improve sleep habits.
+- Consider workload adjustments.
+- Seek professional support if symptoms persist or interfere with daily life.
+
+For elevated anxiety indicators:
+- Practise evidence-informed breathing and grounding techniques.
+- Identify worrying patterns and triggers.
+- Maintain consistent sleep habits.
+- Reduce excessive caffeine where appropriate.
+- Consider professional psychological assessment.
+- Explore appropriate counselling or therapy options.
+
+For elevated depression indicators:
+- Encourage contact with a qualified mental health professional.
+- Encourage social connection and support.
+- Suggest manageable daily activities.
+- Encourage regular sleep and eating routines.
+- Provide information about available psychological support.
+- Highlight urgent support pathways whenever safety concerns arise.
+
+Recommendations must be proportionate to the screening findings.
+
+Never prescribe medications, recommend changing prescribed medication or suggest stopping treatment.
+
+**Personalized action plan**
+
+Generate a practical action plan divided into:
+
+- Actions to consider today.
+- Actions for the next seven days.
+- Longer-term wellness habits.
+- When to seek professional help.
+
+Include realistic, achievable recommendations rather than overwhelming users.
+
+**Print and download**
+
+Provide:
+- Print assessment report.
+- Download report as PDF.
+- Start a new assessment.
+- Return to the home page.
+
+The report should include the assessment date, instrument names and versions, relevant scores, interpretations, recommendations and a medical disclaimer.
+
+Do not store the report on a server. Any PDF generation must happen locally in the browser.
+
+## 8. CRITICAL SAFETY AND EMERGENCY SUPPORT SYSTEM
+
+This is a mandatory feature and must receive special development attention.
+
+Mental health screening must be designed with user safety as a priority.
+
+**Direct safety questions**
+
+Include appropriate, direct and sensitive questions concerning:
+
+- Thoughts of suicide.
+- Thoughts of self-harm.
+- Whether the user feels safe at the moment.
+- Whether the user has an immediate intention to harm themselves.
+
+These questions must be reviewed by a qualified mental health professional.
+
+Do not rely exclusively on the PHQ-9 score to identify suicide risk.
+
+**High-risk response handling**
+
+If a user indicates current suicidal intent, an immediate plan, or imminent danger:
+
+1. Immediately interrupt the normal assessment flow.
+2. Display a prominent crisis-support screen.
+3. Clearly encourage the user to contact emergency services or go to the nearest emergency department.
+4. Encourage the user to contact a trusted person who can stay with them.
+5. Encourage them to move away from anything they could use to harm themselves, where safe to do so.
+6. Display verified crisis-support contacts based on the user's selected country.
+7. Offer accessible emergency calling links on supported devices.
+8. Do not display an ordinary low-risk or reassuring result.
+9. Do not allow a low questionnaire score to override a high-risk answer.
+
+For concerning but non-imminent responses, strongly recommend prompt assessment by a qualified mental health professional and provide appropriate support information.
+
+**Emergency contact directory**
+
+Create a configurable emergency support directory.
+
+The application must not invent telephone numbers or claim that an unverified organization provides crisis support.
+
+For the initial Nigerian audience, provide a country-specific support section only after verifying current emergency and mental health contact information from reliable sources.
+
+Allow international users to select their country and see verified local support information where available.
+
+If no verified crisis line is available, instruct users to contact local emergency services or visit the nearest emergency department.
+
+**Important:** Crisis-support information must remain accessible from the top navigation, footer and assessment screens.
+
+## 9. MENTAL WELLNESS EDUCATION CENTRE
+
+The application must be more than an assessment tool.
+
+Create a dedicated educational section covering stress, anxiety and depression.
+
+Organize the content into the following categories.
+
+### Stress Education
+- What is stress?
+- Types of stress.
+- Causes of stress.
+- Physical symptoms of stress.
+- Psychological symptoms of stress.
+- Emotional effects of stress.
+- Chronic stress.
+- Work-related stress.
+- Academic stress.
+- Financial stress.
+- Stress management.
+- Stress prevention.
+- When to seek professional help.
+
+### Anxiety Education
+- What is anxiety?
+- Common anxiety symptoms.
+- Causes and contributing factors.
+- Generalized anxiety.
+- Panic attacks.
+- Social anxiety.
+- Anxiety triggers.
+- Anxiety management.
+- Psychological treatment options.
+- When to seek professional help.
+
+### Depression Education
+- What is depression?
+- Common signs and symptoms.
+- Potential contributing factors.
+- Types of depressive disorders.
+- Depression and sleep.
+- Depression and productivity.
+- Depression and relationships.
+- Depression treatment options.
+- Supporting someone experiencing depression.
+- When to seek immediate help.
+
+### General Mental Wellness
+- Importance of sleep.
+- Exercise and mental health.
+- Nutrition and mental well-being.
+- Mindfulness.
+- Emotional regulation.
+- Healthy relationships.
+- Managing negative thoughts.
+- Building resilience.
+- Seeking professional support.
+- Mental health myths and facts.
+
+Use accurate, clear and accessible educational language.
+
+Avoid sensationalism, stigmatizing language and misleading claims.
+
+Provide references and credible external resources.
+
+## 10. SELF-CARE AND COPING TOOLS
+
+Develop a practical mental wellness toolkit.
+
+Include:
+
+**Breathing exercises**
+- Guided deep breathing.
+- Slow breathing.
+- Box breathing.
+- Guided relaxation.
+
+Provide clear instructions, suitable durations and pause/stop controls.
+
+Do not imply that breathing exercises are a substitute for medical care.
+
+**Grounding exercises**
+- 5-4-3-2-1 grounding technique.
+- Sensory awareness.
+- Present-moment awareness.
+
+**Mindfulness**
+- Short mindfulness sessions.
+- Guided reflection.
+- Body awareness.
+- Relaxation exercises.
+
+**Daily wellness planner**
+- Daily mood check-in.
+- Sleep check-in.
+- Activity planning.
+- Gratitude reflection.
+- Personal wellness goals.
+
+**Journaling**
+- What is worrying me today?
+- What situations are affecting my mood?
+- What am I grateful for?
+- What can I control today?
+- What support do I need?
+
+All these tools must function without requiring an account or database.
+
+Session-based entries should not be transmitted to external services.
+
+## 11. PROGRESS AND WELLNESS INSIGHTS
+
+Provide an optional progress section.
+
+Users may repeat assessments to compare their results over time.
+
+Because there is no database:
+
+- Keep progress information in the active browser session by default.
+- Make any optional local persistence explicitly opt-in.
+- Explain that browser-local information is not encrypted medical record storage.
+- Provide a clear delete/reset function.
+- Do not transmit personal assessment information externally.
+
+Show changes in scores over time only where comparable validated instruments have been used under appropriate conditions.
+
+Clearly explain that changes in screening scores do not necessarily represent clinical improvement or deterioration.
+
+## 12. TOP NAVIGATION
+
+Create a premium, sticky top navigation bar.
+
+Include:
+
+- Brand logo and application name.
+- Home.
+- Assessments.
+- Stress.
+- Anxiety.
+- Depression.
+- Wellness Resources.
+- Self-Care Tools.
+- Emergency Support.
+
+Use dropdown menus where necessary to maintain a clean navigation structure.
+
+Include a prominent "Take Assessment" CTA.
+
+On mobile, use a well-designed responsive navigation drawer.
+
+Maintain clear active states and accessible keyboard navigation.
+
+## 13. FOOTER
+
+Create a comprehensive footer.
+
+Include:
+
+**Application**
+- About Us.
+- How It Works.
+- Assessments.
+- Mental Wellness.
+
+**Assessment Categories**
+- Stress Assessment.
+- Anxiety Assessment.
+- Depression Assessment.
+- Combined Assessment.
+
+**Resources**
+- Mental Health Articles.
+- Self-Care Tools.
+- Coping Strategies.
+- Frequently Asked Questions.
+
+**Support**
+- Emergency Support.
+- Professional Help.
+- Contact Information.
+
+**Legal and Privacy**
+- Privacy Policy.
+- Terms of Use.
+- Medical Disclaimer.
+- Accessibility Statement.
+
+Include a prominent statement:
+
+"This application provides educational information and mental health screening support. It does not diagnose, treat or replace consultation with a qualified healthcare professional."
+
+## 14. UI/UX DESIGN SYSTEM
+
+The visual experience must meet premium international product-design standards.
+
+Avoid generic templates, cluttered layouts, excessive gradients, distracting animations and inconsistent spacing.
+
+**Design direction**
+
+Create a calm, trustworthy, sophisticated and welcoming visual identity.
+
+Suggested visual characteristics:
+
+- Soft neutral backgrounds.
+- Muted sage green.
+- Deep teal.
+- Soft blue.
+- Warm off-white.
+- Subtle lavender accents.
+- Dark, accessible typography.
+
+Use colours consistently to distinguish the three assessment categories without making the experience feel clinical, frightening or intimidating.
+
+**Typography**
+
+Use a modern, readable typeface such as Inter, Manrope or an equivalent professional font.
+
+Establish a consistent typographic hierarchy for:
+- Main headings.
+- Section headings.
+- Body text.
+- Captions.
+- Buttons.
+- Assessment questions.
+- Result labels.
+
+**Components**
+
+Develop reusable components for:
+
+- Navigation.
+- Footer.
+- Assessment cards.
+- Question cards.
+- Radio-button answer options.
+- Progress indicators.
+- Input fields.
+- Result cards.
+- Score indicators.
+- Charts.
+- Recommendation cards.
+- Warning banners.
+- Emergency support panels.
+- Educational article cards.
+- Modals.
+- Tooltips.
+- Toast notifications.
+
+**Assessment experience**
+
+The questionnaire must feel simple and comfortable.
+
+Include:
+- One question per screen or a small, logically grouped set of questions.
+- Clear answer options.
+- Progress indicators.
+- Previous and Next buttons.
+- Visible required and optional labels.
+- Helpful instructions.
+- Validation messages.
+- Confirmation before discarding an assessment.
+
+Avoid unnecessarily long, overwhelming forms.
+
+**Animations**
+
+Use subtle, purposeful animations for:
+- Page transitions.
+- Progress changes.
+- Card interactions.
+- Result presentation.
+
+Respect the user's reduced-motion preferences.
+
+## 15. TECHNICAL ARCHITECTURE AND DEVELOPMENT STANDARDS
+
+Use a modern frontend architecture.
+
+Preferred technologies:
+
+- React.
+- TypeScript.
+- Vite.
+- Tailwind CSS.
+- A professional reusable component library where appropriate.
+- Lucide icons.
+- A reliable client-side PDF generation library.
+
+Use the best compatible technologies available in the development environment.
+
+**Architecture principles**
+
+Organize the project into modular components and clearly separated application layers.
+
+Suggested structure:
+
+- src/components
+- src/pages
+- src/layouts
+- src/features/assessments
+- src/features/stress
+- src/features/anxiety
+- src/features/depression
+- src/features/results
+- src/features/wellness
+- src/features/emergency
+- src/data
+- src/assessment-engine
+- src/hooks
+- src/utils
+- src/types
+- src/styles
+- src/tests
+
+Separate:
+
+1. User interface.
+2. Assessment questions.
+3. Scoring logic.
+4. Result interpretation.
+5. Recommendation rules.
+6. Educational content.
+7. Safety and emergency handling.
+
+Do not place assessment scoring logic directly inside UI components.
+
+Use TypeScript types and interfaces for assessment questions, responses, scores, result classifications and recommendations.
+
+Use a deterministic rule-based recommendation engine.
+
+Implement reusable utilities and error-handling mechanisms.
+
+Ensure all navigation links, buttons, controls and interactive elements actually work.
+
+Do not use placeholder buttons or non-functional interface elements.
+
+Do not leave core features as TODOs.
+
+## 16. SECURITY, PRIVACY AND DATA PROTECTION
+
+Because the application handles sensitive mental health information, privacy must be a central design principle.
+
+Requirements:
+
+- No account creation.
+- No login.
+- No remote database.
+- No transmission of assessment answers to external servers.
+- No third-party analytics that collect personal assessment data.
+- No advertising trackers.
+- No unnecessary collection of personally identifiable information.
+- No exposure of assessment responses in URLs.
+- No storage of sensitive assessment answers in browser logs.
+- Clear assessment reset functionality.
+- Clear privacy information before the user begins an assessment.
+
+Use secure coding practices, input validation, dependency management and appropriate security headers when supported by the hosting environment.
+
+If local storage is used for an optional feature, obtain explicit consent and explain the limitations.
+
+## 17. ACCESSIBILITY AND INCLUSIVITY
+
+Follow WCAG 2.2 AA principles.
+
+Implement:
+
+- Semantic HTML.
+- Proper heading hierarchy.
+- Keyboard navigation.
+- Visible focus indicators.
+- Screen-reader-friendly labels.
+- Sufficient colour contrast.
+- Accessible form validation.
+- Accessible charts and data summaries.
+- Text alternatives for images.
+- Responsive text sizing.
+- Reduced-motion support.
+
+Use simple, inclusive and non-judgmental language.
+
+Ensure that users with different levels of digital literacy can complete assessments comfortably.
+
+## 18. CONTENT QUALITY AND CLINICAL GOVERNANCE
+
+All mental health information and assessment content must be evidence-informed.
+
+Use reputable references, including:
+
+- World Health Organization (WHO).
+- National Institute for Health and Care Excellence (NICE).
+- American Psychological Association (APA).
+- Recognized clinical assessment resources.
+- Peer-reviewed medical and psychological literature.
+
+Clearly distinguish:
+
+- Validated screening instruments.
+- Supplementary clinical-history questions.
+- Application-specific wellness check-ins.
+- Educational information.
+- Professional medical diagnosis.
+
+Do not fabricate clinical references, screening thresholds or medical claims.
+
+Do not use the terms "diagnosed with depression", "diagnosed with anxiety" or similar diagnostic conclusions in automated reports.
+
+Use language such as:
+- Minimal reported symptoms.
+- Mild symptom indicators.
+- Moderate symptom indicators.
+- High symptom indicators.
+- Further professional assessment recommended.
+
+The precise interpretation must follow the selected validated instrument where applicable.
+
+Have all clinical questionnaires, scoring logic, risk pathways and recommendation content reviewed and approved by appropriately qualified mental health professionals before public deployment.
+
+## 19. SDLC IMPLEMENTATION REQUIREMENTS
+
+Follow the Software Development Life Cycle systematically.
+
+Do not jump directly into writing code without first establishing the application's structure and requirements.
+
+### Phase 1: Planning and Requirement Analysis
+
+- Understand the project objectives.
+- Identify user personas.
+- Define functional requirements.
+- Define non-functional requirements.
+- Identify clinical safety requirements.
+- Identify technical constraints.
+- Document assumptions and dependencies.
+- Establish project scope.
+
+### Phase 2: System Analysis and Architecture
+
+- Define application architecture.
+- Design the information architecture.
+- Define the assessment data model.
+- Define the scoring engine.
+- Define the recommendation engine.
+- Define privacy and security architecture.
+- Define emergency handling.
+- Document the architecture.
+
+### Phase 3: UI/UX Design
+
+- Establish the design system.
+- Design the landing page.
+- Design the assessment centre.
+- Design individual assessment experiences.
+- Design the combined assessment.
+- Design results dashboards.
+- Design the wellness resource centre.
+- Design the emergency support interface.
+- Design responsive mobile layouts.
+
+### Phase 4: Implementation
+
+Implement the application in modular stages.
+
+Recommended implementation order:
+
+1. Project foundation and design system.
+2. Navigation and landing page.
+3. Assessment centre.
+4. Stress assessment.
+5. Anxiety assessment.
+6. Depression assessment.
+7. Combined assessment.
+8. Assessment engine.
+9. Personalized recommendations.
+10. Results dashboard.
+11. Crisis-support workflow.
+12. Educational resources.
+13. Self-care toolkit.
+14. Progress insights.
+15. PDF report generation.
+16. Footer and legal pages.
+
+### Phase 5: Testing and Quality Assurance
+
+Perform:
+
+**Unit testing**
+- Scoring calculations.
+- Severity classifications.
+- Answer validation.
+- Recommendation rules.
+- Safety triggers.
+
+**Integration testing**
+- Assessment-to-scoring integration.
+- Scoring-to-results integration.
+- Results-to-recommendations integration.
+- Crisis workflow integration.
+- PDF report generation.
+
+**Functional testing**
+- Navigation.
+- Buttons.
+- Forms.
+- Assessment progression.
+- Back and Next functionality.
+- Restart functionality.
+- Print and download.
+
+**Responsive testing**
+- Mobile.
+- Tablet.
+- Laptop.
+- Desktop.
+
+**Accessibility testing**
+- Keyboard navigation.
+- Screen-reader compatibility.
+- Colour contrast.
+- Form labels.
+- Error messages.
+
+**Security testing**
+- Data exposure.
+- Input handling.
+- Third-party requests.
+- Browser storage.
+- Dependency vulnerabilities.
+
+**Clinical logic testing**
+- Correct instrument scoring.
+- Correct severity interpretation.
+- Unanswered question handling.
+- Direct safety-question handling.
+- No false reassurance following high-risk responses.
+
+### Phase 6: Deployment
+
+Prepare the application for production deployment.
+
+- Optimize production builds.
+- Configure routing and hosting.
+- Configure security headers.
+- Verify browser compatibility.
+- Validate responsive behaviour.
+- Verify privacy controls.
+- Remove debugging information.
+- Verify all assessment workflows.
+- Confirm that the application works without a database or authentication service.
+
+### Phase 7: Maintenance and Continuous Improvement
+
+Structure the codebase for future improvements.
+
+Make it easy to update:
+- Clinical assessment instruments.
+- Educational content.
+- Recommendation rules.
+- Emergency contacts.
+- Design components.
+- Accessibility improvements.
+
+Document all major changes and ensure clinical content is reviewed whenever relevant assessment instruments or safety recommendations are updated.
+
+## 20. FUNCTIONAL ACCEPTANCE CRITERIA
+
+The completed application must satisfy the following conditions:
+
+1. A visitor can access the application without registering or logging in.
+2. The homepage displays all three mental health assessment categories.
+3. A user can complete stress screening independently.
+4. A user can complete anxiety screening independently.
+5. A user can complete depression screening independently.
+6. A user can complete the combined assessment.
+7. The application correctly calculates validated instrument scores.
+8. The application distinguishes validated scores from custom wellness indicators.
+9. Results are displayed in an understandable format.
+10. Recommendations reflect the user's actual responses.
+11. High-risk responses trigger the appropriate safety workflow.
+12. Emergency support information is accessible.
+13. Users can explore mental health educational resources.
+14. Users can use the self-care tools.
+15. Users can print or download assessment reports.
+16. Users can restart and reset assessments.
+17. The application works on mobile and desktop.
+18. Assessment answers are not transmitted to third-party AI services.
+19. The application does not require a database or authentication.
+20. All core interactive elements work correctly.
+21. Accessibility requirements are implemented.
+22. The application contains appropriate privacy and medical disclaimers.
+
+## 21. EXPECTED FINAL DELIVERABLE
+
+Deliver a complete, polished, functional and production-oriented web application.
+
+The finished application must include:
+
+- Complete landing page.
+- Complete navigation and footer.
+- Stress assessment.
+- Anxiety assessment.
+- Depression assessment.
+- Combined assessment.
+- Contextual health and lifestyle questions.
+- Validated screening instruments where appropriate.
+- Deterministic assessment and scoring engine.
+- Results dashboard.
+- Personalized recommendation engine.
+- Emergency support system.
+- Mental wellness educational centre.
+- Self-care toolkit.
+- Progress and wellness insights.
+- PDF report generation.
+- Privacy and medical disclaimer pages.
+- Responsive layouts.
+- Accessibility support.
+- Testing and project documentation.
+
+Do not deliver merely a visual prototype or static mockup.
+
+The application must be fully functional, with real assessment flows, working calculations, meaningful results and operational user interactions.
+
+Do not use fake data to simulate real assessment results.
+
+Do not leave essential modules unfinished.
+
+## 22. FINAL EXECUTION INSTRUCTIONS
+
+Before implementation, analyze the entire specification and develop a clear execution plan.
+
+Identify any technical or clinical ambiguities that require resolution. Do not silently invent clinical rules to fill gaps.
+
+Build the application incrementally, ensuring that each module integrates properly with the others.
+
+Prioritize clinical safety, user privacy, functionality, accessibility, maintainability and user experience.
+
+Use professional engineering standards and clean, reusable code.
+
+Ensure the application is visually exceptional but never sacrifice clinical clarity or usability for aesthetics.
+
+The final product should feel like a professionally developed mental wellness platform that could compete with internationally recognized digital wellness products.
+
+**MOST IMPORTANT:** The application must help people understand their mental well-being, recognize when they may need support and take informed next steps. It must never mislead users into believing that an automated questionnaire can replace a proper medical or psychological evaluation.
+
+Now proceed with the planning, architecture, design and implementation of the complete application.
